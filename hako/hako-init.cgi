@@ -24,7 +24,7 @@ $ENV{'TZ'} = "JST-9";
 #----------------------------------------------------------------------
 
 # デバッグモード(1だと、「ターンを進める」ボタンが使用できる)
-$Hdebug = 1;
+$Hdebug = 0;
 
 # パスワードファイル名
 # マスタパスワードなどは暗号化されてパスワードファイルに記憶されています。
@@ -104,7 +104,7 @@ $lockMode = 2;
 $HdirMode = 0755;
 
 # 1ターンが何秒か
-$HunitTime = 3600;
+$HunitTime = 3600*4;
 
 # ターン更新間隔を細かく設定するか？(0:しない、1:する)
 # $HrepeatTurnで複数ターン設定している場合は、正常に動作しません。
@@ -274,7 +274,7 @@ $HcampbbsPath = 'http://localhost/hakoN/bbs/wforum.cgi';
 $Hcampchat = 0;
 
 # 究想用陣営会議室へのパス
-$HcampchatPath = 'http://localhost/hakoN/chat/chat.cgi';
+$HcampchatPath = '';
 
 ### 追加終了  <v1.05>
 
