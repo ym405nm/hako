@@ -1,0 +1,109 @@
+/********************************************************************/
+/*  Hakoniwa Skin for 究想の箱庭「みんなで歩む箱庭進化論」          */
+/*                                                                  */
+/* 海域用スタイルシート (今後の改良で仕様変更する可能性があります ) */
+/********************************************************************/
+
+@charset "Shift_JIS";
+
+a:link    { color: #aaaaff;     }
+a:visited { color: #aaaaff;     }
+a:active  { color: green;       }
+a:hover   { text-decoration:underline;}
+a.M       { text-decoration:none;font-size:9pt;}
+
+body{
+/*  font-family: Tahoma, MS UI Gothic, Chicago; */
+  color: white;
+  background-color: bule;
+/*
+  scrollbar-3d-light-color:#EEFFFF;
+  scrollbar-arrow-color:#AABBCC;
+  scrollbar-base-color:#EEFFFF;
+  scrollbar-dark-shadow-coor:#AABBCC;
+  scrollbar-face-color:#EEFFFF;
+  scrollbar-highlight-color:#EEFFFF;
+  scrollbar-shadow-color:#AABBCC;
+*/
+}
+
+h1   { color: #ffffff;       }
+h2   { color: #ffffff;       }
+hr   { color: #ffffff;       }
+
+/* リンク(ヘッダ) */
+#LinkHead    {
+  white-space : nowrap;
+}
+
+/* リンク(フッタ) */
+#LinkFoot    {
+  border      : dashed #AABBCC 1px;
+  width       : 450px;
+  margin-left : 25%;
+  background-color: #002288;
+}
+
+#RecentlyLog2{ white-space : nowrap; margin-left: 30px;   } /* 各島の近況      */
+#islandInfo  { white-space : nowrap; text-align : center; } /* 島の情報        */
+#islandMap   { white-space : nowrap; text-align : center; } /* 島の地図        */
+#localBBS    { white-space : nowrap; text-align : center; } /* ローカル掲示板  */
+#targetMap   { white-space : nowrap; text-align : center; } /* 目標補足 */
+
+/* 大きい文字 */
+.big {
+  font-size:200%;
+}
+
+/* 島の名前など */
+.islName   {
+  color: #E06040;
+  font-weight: bold;
+}
+
+/* 順位表における見だし */
+.head      {
+  color: #D07000;
+  font-weight: bold;
+}
+.number      { font-weight: bold;color: #77ccff;        } /* 順位の番号など */
+
+.TitleCell   { background-color: #002288;                 } /* 順位表見出し      */
+.SubTCell    { background-color: #0022AA;text-align:center} /* 順位表サブ見出し  */
+.InfoCell    { background-color: #0033BB;text-align:right } /* 順位表島の情報    */
+.LbbsCell    { background-color: #0033BB;                 } /* 観光者通信表示欄  */
+.PopupCell   { background-color: #113355;                 } /* Popup コマンド入力欄 */
+
+/* マップの各マスの設定 究想必須 */
+td.b { background-color:#000088; border-width:0px; }
+td.e { background-color:#880000; border-width:0px; }
+td.i { background-color:#666666; border-width:0px; }
+td.s { border-width:0px; }
+
+/* 観光画面ナビゲータ・ウィンドウ */
+#NaviView{
+  visibility: hidden;
+  z-index:1;
+  position:absolute;
+  background-color: #000088;
+  border: solid #4169E1;
+  border-width: 10px 1px 1px 1px;
+  margin-top : -224px;
+}
+.NaviTitle {
+  color: #ffffff;
+  font-size: 9pt;
+}
+.NaviImg {
+  margin : 1px;
+}
+.NaviText {
+  color: #ffffff;
+  font-size: 9pt;
+}
+TD.M {
+  cursor:default;
+  border-style:outset;
+  border-width:0px;
+  border-color:#CCCCFF;
+}
